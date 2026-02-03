@@ -36,8 +36,6 @@
     <xacro:arg name="safety_pos_margin" default="0.15" />
     <xacro:arg name="safety_k_position" default="20" />
 
-    <!--When using gazebo simulations absolute paths are necessary.-->
-    <xacro:arg name="force_abs_paths" default="false" />
 
     <!-- arm -->
     <xacro:ur_robot
@@ -51,7 +49,6 @@
         safety_limits="$(arg safety_limits)"
         safety_pos_margin="$(arg safety_pos_margin)"
         safety_k_position="$(arg safety_k_position)"
-        force_abs_paths="$(arg force_abs_paths)"
     >
         <origin xyz="0 0 0" rpy="0 0 0" />          <!-- position robot in the world -->
     </xacro:ur_robot>

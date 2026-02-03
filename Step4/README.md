@@ -8,6 +8,7 @@
 ```bash
 rosds
 git clone https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
+cd Universal_Robots_ROS2_Description
 git checkout origin/humble 
 cb
 ```
@@ -15,6 +16,7 @@ If you are using ROS2 Jazzy on Ubuntu 24.04, run the following command to instal
 ```bash
 rosds
 git clone https://github.com/UniversalRobots/Universal_Robots_ROS2_Description.git
+cd Universal_Robots_ROS2_Description
 git checkout origin/jazzy
 cb
 ```
@@ -36,6 +38,14 @@ ros2 pkg create --build-type ament_python ur3e_on_table
 ```
 
 Add in the `view_ur3e_on_table.launch.py` and corresponding `ur3e_on_table.urdf.xacro` file to appropriate locations in your package, just like you did in Step 2. Build the package, then run the launch script. Take a screenshot of the robot on top of the table, with random joint positions.
+
+Your `ws2` workspace folder should now have the following structure. (Note: eceprog users will not have the `Universal_Robots_ROS2_Description` folder because that package has already been installed globally on eceprog.)
+
+![alt text](image.png)
+
+Your `ur3e_on_table` folder will look like the following by the end of this lab:
+
+![alt text](image-1.png)
 
 ---
 
@@ -195,7 +205,7 @@ Create a new ROS node `JointPublisherPickAndPlace` and a corresponding executabl
 
 ## Free Response Questions
 
-There are additional free-response questions for this problem. See the Overleaf template.
+There are additional free-response questions for this problem. See the Overleaf template. Answer them to the best of your abilities, and do not use LLMs to generate answers for you.
 
 ## Push to GitHub
 

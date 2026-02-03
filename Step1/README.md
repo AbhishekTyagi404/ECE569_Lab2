@@ -3,9 +3,9 @@ This lab is focused on creating URDF (Universal Robot Description Format) files.
 
 In Step 1, you will learn how to create URDF files from scratch. In Step 2, we will use the `xacro` tool to stream-line the process. In Step 3, we will become familiar with creating a robot description as a ROS package. In Step 4, we will look at the official Universal Robotics Description Package, and get to visualize the arm moving! 
 
-## Installing Necessary Packages
+## Installing Necessary Packages (for non-eceprog users)
 
-If you are not using eceprog, you will need to install the following ros packages. by following the instructions below. eceprog users do not have the required permissions to install external ros2 packages, but that is okay because the nice people in the IT department have already installed these packages for you.
+**If you are not using eceprog**, you will need to install the following ros packages. by following the instructions below. eceprog users do not have the required permissions to install external ros2 packages, but that is okay because the nice people in the IT department have already installed these packages for you.
 
 Before you ever install anything on Ubuntu, make sure that you update your package manager:
 ```
