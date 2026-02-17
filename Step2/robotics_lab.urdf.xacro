@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="robotics_lab">
+
+  <!-- Include macros -->
+  <xacro:include filename="materials.xacro"/>
+  <xacro:include filename="table_macro.xacro"/>
+  <xacro:include filename="rrbot_macro.xacro"/>
+
+  <!-- World -->
+  <link name="world"/>
+
+  <!-- ================= TABLE 1 ================= -->
+  <xacro:table prefix="table1_" parent="world">
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+  </xacro:table>
+
+  <xacro:rrbot prefix="robot1_" parent="table1_top">
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+  </xacro:rrbot>
+
+
+  <!-- ================= TABLE 2 ================= -->
+  <xacro:table prefix="table2_" parent="world">
+    <origin xyz="4 0 0" rpy="0 0 0"/>
+  </xacro:table>
+
+  <xacro:rrbot prefix="robot2_" parent="table2_top">
+    <origin xyz="0 0 0.05" rpy="0 0 0"/>
+  </xacro:rrbot>
+
+
+  <!-- ================= TABLE 3 ================= -->
+  <xacro:table prefix="table3_" parent="world">
+    <origin xyz="0 4 0" rpy="0 0 0"/>
+  </xacro:table>
+
+  <!-- Two robots on table 3 -->
+  <xacro:rrbot prefix="robot3a_" parent="table3_top">
+    <origin xyz="-0.5 0 0.05" rpy="0 0 0"/>
+  </xacro:rrbot>
+
+  <xacro:rrbot prefix="robot3b_" parent="table3_top">
+    <origin xyz="0.5 0 0.05" rpy="0 0 0"/>
+  </xacro:rrbot>
+
+</robot>
+

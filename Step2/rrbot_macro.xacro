@@ -6,7 +6,7 @@
     <!-- Constants for robot dimensions -->
     <xacro:property name="width" value="0.05" /> <!-- Square dimensions (widthxwidth) of beams -->
     <xacro:property name="height0" value="2" /> <!-- base_link -->
-    <xacro:property name="height1" value="1" /> <!-- link1 -->
+    <xacro:property name="height1" value="1.5" /> <!-- link1 -->
     <xacro:property name="height2" value="1" /> <!-- link2 -->
     <xacro:property name="axel_offset" value="0.05" /> <!-- Space between top of beam and each joint -->
 

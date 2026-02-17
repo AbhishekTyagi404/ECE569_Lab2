@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="table">
+
+  <xacro:include filename="materials.xacro"/>
+  <xacro:include filename="table_macro.xacro"/>
+
+  <link name="world"/>
+
+  <!-- IMPORTANT: table top must be at height 1 -->
+  <xacro:table prefix="table_" parent="world">
+    <origin xyz="0 0 1" rpy="0 0 0"/>
+  </xacro:table>
+
+</robot>
+
